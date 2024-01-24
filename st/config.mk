@@ -7,6 +7,7 @@ VERSION = 0.8.5
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
+CFLAGS += -O3 -march=sandybridge
 X11INC = /usr/X11R6/include
 X11LIB = /usr/X11R6/lib
 
@@ -34,4 +35,3 @@ STLDFLAGS = $(LIBS) $(LDFLAGS)
 #       `$(PKG_CONFIG) --libs freetype2`
 
 # compiler and linker
-CC = tcc
