@@ -6,6 +6,11 @@ map ge g$
 map gb g^
 set relativenumber
 
+set mouse=a
+set clipboard+=unamedplus
+set noshowmode
+set noruler
+
 syntax on                  
 
 set smartindent
@@ -32,7 +37,8 @@ set lazyredraw
 set splitbelow             
 set splitright             
 
-set cursorline             
+set cursorline
+
 set wrapscan               
 set report      =0         
 set synmaxcol   =200       
@@ -48,5 +54,8 @@ set nu
 
 let base16colorspace=256  
 set termguicolors
+colorscheme  base16-gruvbox-light-hard
 
-colorscheme  base16-gruvbox-light-soft
+
+" recompile suckless  programs 
+    autocmd BufWritePost config.h !doas make install
