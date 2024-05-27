@@ -81,3 +81,4 @@ highlight cIncluded ctermfg=NONE cterm=bold
 highlight Pmenu ctermbg=white ctermfg=black
 highlight PmenuSel ctermbg=darkcyan ctermfg=black
 set nu
+
